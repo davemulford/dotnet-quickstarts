@@ -1,0 +1,45 @@
+{
+  "name": "HelloAspNetMvc",
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "preserveCompilationContext": true,
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.AspNetCore.Mvc": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
+    "Microsoft.AspNetCore.Hosting": "1.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+    "Microsoft.Extensions.Logging": "1.0.0",
+    "Microsoft.Extensions.Logging.Console": "1.0.0",
+    "Microsoft.AspNetCore.Http.Abstractions": "1.0.0",
+
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0",
+      "type": "platform"
+    },
+
+    "Microsoft.AspNetCore.Razor.Tools": {
+        "version": "1.0.0-*",
+        "type": "build"
+    }
+  },
+  "tools": {
+      "Microsoft.AspNetCore.Razor.Tools": {
+        "version": "1.0.0-preview2-final",
+        "imports": "portable-net45+win8+dnxcore50"
+      }
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      },
+      "imports": "dnxcore50"
+    }
+  }
+}
